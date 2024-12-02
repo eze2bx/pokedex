@@ -4,6 +4,6 @@ kind: Kustomization
 namespace: pokeapi
 
 resources:
-- deployment.yaml
-- svc.yaml
-- configmap.yaml
+  - deployment.yaml
+  - svc.yaml
+  - configmap.yaml
