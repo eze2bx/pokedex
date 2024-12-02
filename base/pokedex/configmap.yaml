@@ -1,0 +1,8 @@
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  name: pokedex-cm
+data:
+  POKEDEX_NAME: "config-map-base"
+  POKEDEX_START_NUMBER: "0"
+  POKEDEX_END_NUMBER: "10"

@@ -1,20 +1,20 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: pokeapi
+  name: pokedex
 spec:
-  replicas: 2
+  replicas: 1
   revisionHistoryLimit: 3
   selector:
     matchLabels:
-      app: pokeapi
+      app: pokedex
   template:
     metadata:
       labels:
-        app: pokeapi
+        app: pokedex
     spec:
       containers:
-      - image: pokeapi:0.1
-        name: pokeapi
-        ports:
-        - containerPort: 3000
+        - image: pokedex:1.0.0
+          name: pokedex
+          ports:
+            - containerPort: 3000
