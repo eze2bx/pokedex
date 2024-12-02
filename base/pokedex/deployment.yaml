@@ -18,6 +18,9 @@ spec:
           name: pokedex
           ports:
             - containerPort: 3000
-          envFrom:
-            - configMapRef:
-                name: pokedex-cm
+          env:
+            - name: POKEDEX_NAME
+              valueFrom:
+                configMapKeyRef:
+                  name: pokedex-cm
+                  key: POKEDEX_NAME
