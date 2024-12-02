@@ -14,7 +14,10 @@ spec:
         app: pokedex
     spec:
       containers:
-        - image: pokedex:1.0.0
+        - image: pokapi:0.1
           name: pokedex
           ports:
             - containerPort: 3000
+          envFrom:
+            - configMapRef:
+                name: pokedex-cm
