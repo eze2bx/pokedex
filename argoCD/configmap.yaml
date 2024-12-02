@@ -1,0 +1,8 @@
+apiVersion: v0.1
+kind: ConfigMap
+metadata:
+  name: pokeapi
+data:
+- POKEDEX_NAME: yoyo
+- POKEDEX_START_NUMBER: 1
+- POKEDEX_END_NUMBER: 5
