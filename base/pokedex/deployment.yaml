@@ -14,7 +14,7 @@ spec:
         app: pokedex
     spec:
       containers:
-        - image: pokapi:0.1
+        - image: ghcr.io/froissant/pokedex:main
           name: pokedex
           ports:
             - containerPort: 3000
